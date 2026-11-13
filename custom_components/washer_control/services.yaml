@@ -1,0 +1,56 @@
+start:
+  name: Waschprogramm starten
+  description: Startet ein hOn-Programm (Fernstart an der Maschine muss aktiv sein).
+  fields:
+    washer:
+      name: Waschmaschine
+      example: ku_washer
+      selector:
+        text:
+    program:
+      name: Programm
+      required: true
+      example: hqd_cottons
+      selector:
+        text:
+    parameters:
+      name: Parameter
+      example: '{"temp": "40", "spinSpeed": "1200"}'
+      selector:
+        object:
+command:
+  name: Waschgang steuern
+  description: Pause, Fortsetzen oder Abbrechen.
+  fields:
+    washer:
+      name: Waschmaschine
+      selector:
+        text:
+    command:
+      name: Befehl
+      required: true
+      selector:
+        select:
+          options: [pause, resume, stop]
+acknowledge:
+  name: Wäsche-fertig-Hinweis quittieren
+  description: Blendet den Hinweis „Wäsche fertig“ aus (passiert sonst beim Öffnen der Tür).
+  fields:
+    washer:
+      name: Waschmaschine
+      selector:
+        text:
+task_done:
+  name: Wartung erledigt
+  description: Hakt eine Wartungsaufgabe ab.
+  fields:
+    washer:
+      name: Waschmaschine
+      selector:
+        text:
+    task:
+      name: Aufgabe
+      required: true
+      example: filter
+      selector:
+        text:

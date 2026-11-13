@@ -1,0 +1,18 @@
+{
+  "domain": "washer_control",
+  "name": "Washer Control",
+  "after_dependencies": [
+    "hon"
+  ],
+  "codeowners": [
+    "@SysriX"
+  ],
+  "dependencies": [
+    "websocket_api"
+  ],
+  "documentation": "https://github.com/SysriX/washer_control_ha_integration",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/SysriX/washer_control_ha_integration/issues",
+  "requirements": [],
+  "version": "1.1.1"
+}
