@@ -4,6 +4,9 @@ Custom integration for **Haier / Candy / Hoover washing machines connected via h
 detect wash cycles, report "laundry done", keep a history with statistics, and remind you of maintenance tasks.
 Optionally combines the data with a smart plug that measures power and energy.
 
+![Washer Control preview](docs/images/preview.png)
+*Companion card [Washer Card](https://github.com/SysriX/washer_ha_card): running program, power curve, consumption and program selection (UI in German)*
+
 - Domain: `washer_control`
 - Version: 1.1.1
 - UI language of program names, states and maintenance tasks: German
